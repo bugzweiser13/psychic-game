@@ -59,3 +59,18 @@ document.onkeyup = function (event) {
       document.getElementById('attempts').innerHTML = attempts;
 
 }
+function zeroPad(numberStr) {
+    return numberStr.padStart(2, "0");
+  }
+  
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  
+  numbers.forEach(
+    function(num) {
+      var numString = num.toString();
+      
+      var paddedNum = zeroPad(numString);
+  
+      console.log(paddedNum);
+    }
+  );
